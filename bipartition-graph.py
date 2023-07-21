@@ -1,10 +1,11 @@
 
 def possible_bipartition(dislikes):
-    all_dogs = list(dislikes.keys())
-
+    if not dislikes:
+        return False
+    
     dog = {}
+    
     for each_node in dislikes:
-
         if each_node not in dog:
             neighbors = [each_node]
             next_neighbor = []
@@ -44,3 +45,7 @@ dislikes = {
     "Spot": ["Nala", "Cooper"]
 }
 print(f'Test 2: {possible_bipartition(dislikes)}')
+
+#test 3 - Empty graph
+dislikes = {}
+print(f'Test 3: {possible_bipartition(dislikes)}')

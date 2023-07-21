@@ -1,4 +1,4 @@
-An example of a working implementation:
+#An example of a working implementation:
 
 COLORS = ["red", "green"]
 
